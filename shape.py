@@ -9,6 +9,7 @@ def apply_morphological_operations(image_path, output_folder,threshold_value):
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))
     
     
+    
 
     _, img = cv2.threshold(img, threshold_value, 255, cv2.THRESH_BINARY)
     img = 255 - img
